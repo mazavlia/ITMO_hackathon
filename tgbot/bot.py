@@ -13,7 +13,8 @@ import io
 import csv
 from datetime import datetime
 
-API_TOKEN = '6566139293:AAEFehfe_sslI0LccAcQlTBrOsjhMt0ZrA4'
+# Введите свой API_TOKEN
+API_TOKEN = 'YOUR_API_TOKEN'
 bot = telebot.TeleBot(API_TOKEN)
 bot.timeout = 300
 
@@ -22,7 +23,7 @@ def send_request_with_retry(sess, url, method='GET', **kwargs):
     # Задаем число попыток на выполнение запроса.
     retries = 5
     # Задаем начальную задержку перед повтором запроса в секундах.
-    delay = 3
+    delay = 2
     # Цикл for выполняется заданное число попыток (retries).
     for i in range(retries):
         try:
