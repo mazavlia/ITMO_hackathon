@@ -14,7 +14,7 @@ import csv
 from datetime import datetime
 
 # Введите свой API_TOKEN
-API_TOKEN = '6566139293:AAEFehfe_sslI0LccAcQlTBrOsjhMt0ZrA4'
+API_TOKEN = 'API_TOKEN'
 bot = telebot.TeleBot(API_TOKEN)
 bot.timeout = 300
 
